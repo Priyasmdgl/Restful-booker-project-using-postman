@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Restful booker" tests="20" time="6.771">
+  <testsuite name="HTTP requests / Create token" id="3b35592d-a681-45ad-83ee-3168694e692b" timestamp="2024-09-14T06:50:03.408Z" tests="0" failures="0" errors="0" time="1.110"/>
+  <testsuite name="HTTP requests / Get booking" id="0e0fd97c-4f25-450e-bc02-b6a8cf2756ba" timestamp="2024-09-14T06:50:03.408Z" tests="0" failures="0" errors="0" time="0.478"/>
+  <testsuite name="HTTP requests / Get request using an env variable" id="2174732b-a2e2-4df5-a44c-aed45f2726f8" timestamp="2024-09-14T06:50:03.408Z" tests="0" failures="0" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND restful-booker.{{domain}}.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:120:26)
+
+---
+]]></system-err>
+  </testsuite>
+  <testsuite name="HTTP requests / Get booking by id" id="c4ed531e-48dc-4854-bf71-bcf1b9c4ab2f" timestamp="2024-09-14T06:50:03.408Z" tests="0" failures="0" errors="0" time="0.258"/>
+  <testsuite name="HTTP requests / Create a booking" id="a2a6265a-c7ec-43cf-8e77-75428c6a73a0" timestamp="2024-09-14T06:50:03.408Z" tests="0" failures="0" errors="0" time="0.247"/>
+  <testsuite name="HTTP requests / Full update in a booking" id="eaef4c1d-dabe-47fb-be83-572158f8fe00" timestamp="2024-09-14T06:50:03.408Z" tests="0" failures="0" errors="0" time="0.247"/>
+  <testsuite name="HTTP requests / Partial update in a booking" id="0884e520-0caa-4f39-a946-5312a4a80a70" timestamp="2024-09-14T06:50:03.408Z" tests="0" failures="0" errors="0" time="0.244"/>
+  <testsuite name="HTTP requests / Delete a booking" id="f98215fc-a5ac-4082-9b59-74946801fabe" timestamp="2024-09-14T06:50:03.408Z" tests="0" failures="0" errors="0" time="0.240"/>
+  <testsuite name="HTTP requests / Ping healthcheck" id="9849105d-fdef-4c98-afd9-dee8571c3a16" timestamp="2024-09-14T06:50:03.408Z" tests="0" failures="0" errors="0" time="0.246"/>
+  <testsuite name="Test cases / TC1 with number in first and last name" id="c92e70d0-9f5e-422c-808e-4bba45e74bb8" timestamp="2024-09-14T06:50:03.408Z" tests="0" failures="0" errors="0" time="0.240"/>
+  <testsuite name="Test cases / TC2 with -ve value in price" id="7508d02c-1123-4381-89bd-4e4b3e728130" timestamp="2024-09-14T06:50:03.408Z" tests="0" failures="0" errors="0" time="0.242"/>
+  <testsuite name="Test cases / TC3 with invalid dates" id="c5b8c32f-825b-45e5-9d7e-f1c4a44a7a55" timestamp="2024-09-14T06:50:03.408Z" tests="0" failures="0" errors="0" time="0.240"/>
+  <testsuite name="Test cases / TC4 with no header" id="6b8afb02-c824-4408-8643-2134b0420db4" timestamp="2024-09-14T06:50:03.408Z" tests="0" failures="0" errors="0" time="0.243"/>
+  <testsuite name="Test cases / TC5 with no price" id="af66e7eb-ebaf-4119-bd15-b80dd0ab572b" timestamp="2024-09-14T06:50:03.408Z" tests="0" failures="0" errors="0" time="0.827"/>
+  <testsuite name="Test cases / TC6 with invalid booking id" id="5e2c908d-b43d-4445-afdd-b45dafa540dc" timestamp="2024-09-14T06:50:03.408Z" tests="0" failures="0" errors="0" time="0.242"/>
+  <testsuite name="Test cases / TC7 with invalid body format" id="453682d3-e2fc-4c45-8f2f-832f9a7f966a" timestamp="2024-09-14T06:50:03.408Z" tests="0" failures="0" errors="0" time="0.242"/>
+  <testsuite name="Test cases / TC8 with partial update in put request" id="ffe85c94-0ebf-4e4b-a8b7-b2d47333a4ac" timestamp="2024-09-14T06:50:03.408Z" tests="0" failures="0" errors="0" time="0.240"/>
+  <testsuite name="Test cases / TC9 with spl char in  price" id="7258f876-932f-41cd-914b-693b07e8bcab" timestamp="2024-09-14T06:50:03.408Z" tests="0" failures="0" errors="0" time="0.234"/>
+  <testsuite name="Test cases / TC10 with invalid token" id="17c092af-b656-4ba5-bc79-1ea162c9ceb8" timestamp="2024-09-14T06:50:03.408Z" tests="0" failures="0" errors="0" time="0.252"/>
+  <testsuite name="Test cases / Test scripts" id="6474a7a0-1913-4fa5-9e1b-82223f6c5088" timestamp="2024-09-14T06:50:03.408Z" tests="6" failures="2" errors="0" time="0.699">
+    <testcase name="Status code is 200" time="0.699" classname="TestCasesTestScripts"/>
+    <testcase name="Body matches string" time="0.699" classname="TestCasesTestScripts"/>
+    <testcase name="Content-Type is present" time="0.699" classname="TestCasesTestScripts">
+      <failure type="AssertionFailure" message="expected response to have header with key 'application/json'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: a9e01cc1-391f-4d8e-becf-4cdc6167ab07.]]>
+        <![CDATA[Collection name: Restful booker.]]>
+        <![CDATA[Request name: Test cases / Test scripts.]]>
+        <![CDATA[Test description: Content-Type is present.]]>
+        <![CDATA[Error message: expected response to have header with key 'application/json'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have header with key 'application/json'
+   at Object.eval sandbox-script.js:3:20).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response time is less than 200ms" time="0.699" classname="TestCasesTestScripts">
+      <failure type="AssertionFailure" message="expected 699 to be below 200">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: a9e01cc1-391f-4d8e-becf-4cdc6167ab07.]]>
+        <![CDATA[Collection name: Restful booker.]]>
+        <![CDATA[Request name: Test cases / Test scripts.]]>
+        <![CDATA[Test description: Response time is less than 200ms.]]>
+        <![CDATA[Error message: expected 699 to be below 200.]]>
+        <![CDATA[Stacktrace: AssertionError: expected 699 to be below 200
+   at Object.eval sandbox-script.js:4:20).]]>
+      </failure>
+    </testcase>
+    <testcase name="Successful GET request" time="0.699" classname="TestCasesTestScripts"/>
+    <testcase name="Status code name has string" time="0.699" classname="TestCasesTestScripts"/>
+  </testsuite>
+</testsuites>
